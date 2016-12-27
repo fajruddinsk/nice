@@ -57,6 +57,18 @@
 					</attribute>
 				</attributes>
 			</itemtype>
+	<itemtype code="ApparelProduct" extends="Product"
+			          autocreate="false" generate="true"
+			          jaloclass="com.nice.core.jalo.ApparelProduct">
+				<description>Base apparel product extension that contains additional attributes.</description>
+				<attributes>
+					<attribute qualifier="facetAttribute" type="java.lang.String">
+						
+						<modifiers/>
+					<persistence type="property"/>
+					</attribute>
+				</attributes>
+			</itemtype>
 
 			<itemtype code="ApparelStyleVariantProduct" extends="VariantProduct"
 			          autocreate="true" generate="true"

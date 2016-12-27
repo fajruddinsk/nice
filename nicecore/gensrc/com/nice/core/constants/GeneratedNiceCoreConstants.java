@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at Dec 26, 2016 12:02:49 AM                    ---
+ * --- Generated at Dec 26, 2016 7:07:34 PM                     ---
  * ----------------------------------------------------------------
  */
 package com.nice.core.constants;

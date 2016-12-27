@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at Dec 26, 2016 12:02:49 AM                    ---
+ * --- Generated at Dec 26, 2016 7:07:34 PM                     ---
  * ----------------------------------------------------------------
  */
 package com.nice.core.jalo;
@@ -24,17 +24,56 @@ public abstract class GeneratedApparelProduct extends Product
 {
 	/** Qualifier of the <code>ApparelProduct.genders</code> attribute **/
 	public static final String GENDERS = "genders";
+	/** Qualifier of the <code>ApparelProduct.facetAttribute</code> attribute **/
+	public static final String FACETATTRIBUTE = "facetAttribute";
 	protected static final Map<String, AttributeMode> DEFAULT_INITIAL_ATTRIBUTES;
 	static
 	{
 		final Map<String, AttributeMode> tmp = new HashMap<String, AttributeMode>(Product.DEFAULT_INITIAL_ATTRIBUTES);
 		tmp.put(GENDERS, AttributeMode.INITIAL);
+		tmp.put(FACETATTRIBUTE, AttributeMode.INITIAL);
 		DEFAULT_INITIAL_ATTRIBUTES = Collections.unmodifiableMap(tmp);
 	}
 	@Override
 	protected Map<String, AttributeMode> getDefaultAttributeModes()
 	{
 		return DEFAULT_INITIAL_ATTRIBUTES;
+	}
+	
+	/**
+	 * <i>Generated method</i> - Getter of the <code>ApparelProduct.facetAttribute</code> attribute.
+	 * @return the facetAttribute
+	 */
+	public String getFacetAttribute(final SessionContext ctx)
+	{
+		return (String)getProperty( ctx, FACETATTRIBUTE);
+	}
+	
+	/**
+	 * <i>Generated method</i> - Getter of the <code>ApparelProduct.facetAttribute</code> attribute.
+	 * @return the facetAttribute
+	 */
+	public String getFacetAttribute()
+	{
+		return getFacetAttribute( getSession().getSessionContext() );
+	}
+	
+	/**
+	 * <i>Generated method</i> - Setter of the <code>ApparelProduct.facetAttribute</code> attribute. 
+	 * @param value the facetAttribute
+	 */
+	public void setFacetAttribute(final SessionContext ctx, final String value)
+	{
+		setProperty(ctx, FACETATTRIBUTE,value);
+	}
+	
+	/**
+	 * <i>Generated method</i> - Setter of the <code>ApparelProduct.facetAttribute</code> attribute. 
+	 * @param value the facetAttribute
+	 */
+	public void setFacetAttribute(final String value)
+	{
+		setFacetAttribute( getSession().getSessionContext(), value );
 	}
 	
 	/**
